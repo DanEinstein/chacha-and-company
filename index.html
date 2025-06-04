@@ -210,20 +210,39 @@
     <li><strong>Sunday:</strong> Closed</li>
   </ul>
   <h3>Send us a Message</h3>
-<form id="contact-form" action="https://formsubmit.co/wanjikumary95@gmail.com" method="POST">
-  <input type="hidden" name="_next" value="thankyou.html">
-  <input type="hidden" name="_captcha" value="false">
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="subject" placeholder="Subject" required>
+    <textarea id="message" placeholder="How can we help you?" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <section id="faq" class="faq-content appear">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>What areas of law do you specialize in?</h3>
+      <p>We specialize in corporate law, family law, criminal defense, contract law, litigation, and legal consultation.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How can I book a consultation?</h3>
+      <p>You can book a consultation by calling us, emailing, or using the contact form on this website.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Where is your office located?</h3>
+      <p>We are located in Kiambu Town, Kiambu County, Kenya.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you offer free initial consultations?</h3>
+      <p>Yes, we offer a free initial consultation to discuss your legal needs.</p>
+    </div>
+  </div>
+</section>
 
-  <input type="text" name="name" id="name" placeholder="Your Name" required>
-  <input type="email" name="email" id="email" placeholder="Email Address" required>
-  <input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
-  <input type="text" name="subject" id="subject" placeholder="Subject" required>
-  <textarea name="message" id="message" placeholder="How can we help you?" rows="4" required></textarea>
-
-  <button type="submit">Send Message</button>
-</form>
 
 </section>
+<!-- FAQ Section -->
 
 <footer class="footer">
   <div class="footer-content">
