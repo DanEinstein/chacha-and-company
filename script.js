@@ -1,17 +1,12 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default refresh
-
-    document.getElementById("confirmation-message").style.display = "block";
-});
-// Add this in a <script> tag or JS file
-document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll('.appear');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+const toggleBtn = document.getElementById('theme-toggle');
+    const icon = toggleBtn.querySelector('i');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      if(document.body.classList.contains('dark')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
       }
     });
-  });
-  elements.forEach(el => observer.observe(el));
-});
