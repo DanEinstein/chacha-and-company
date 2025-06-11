@@ -1,4 +1,4 @@
-const toggleBtn = document.getElementById('theme-toggle');
+   const toggleBtn = document.getElementById('theme-toggle');
     const icon = toggleBtn.querySelector('i');
     toggleBtn.addEventListener('click', () => {
       document.body.classList.toggle('dark');
